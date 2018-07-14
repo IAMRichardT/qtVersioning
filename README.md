@@ -90,6 +90,8 @@ The way you version your software really depends on personal preference. This sc
 <dl>
   <dt>Template Ex:</dt>
   <dd>[MAJOR].[MINOR].[MICRO].[BUILD]</dd>
+  <dt>Sample:</dt>
+  <dd>1.3.218.1192</dd>
 </dl>
 
 <dl>
