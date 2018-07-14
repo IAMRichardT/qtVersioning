@@ -75,5 +75,5 @@ The way you version your software really depends on personal preference. This sc
 
 <dl>
   <dt>Template Ex:</dt>
-  <dd><MAJOR>.<MINOR>.<MICRO>.<BUILD></dd>
+  <dd>[MAJOR].[MINOR].[MICRO].[BUILD]</dd>
 </dl>
