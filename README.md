@@ -29,7 +29,8 @@ Every time you build your application in Qt, the **build.bat** script will execu
 # Customization
 All information to be included in your **header.h** file will come from the **build.bat** script. You may open that script in a text editor and adjust whatever parameters you wish. Once saved, go back to Qt and do another build so that the changes will take affect.
 
-# Definitions
+# Definitions (C++ app)
+The following macros can be used inside your application once your first build has been ran.
 
 Macro | Description
 ------------ | -------------
@@ -40,3 +41,11 @@ APP_MAJOR | Version major [manually defined by user in .bat]
 APP_MINOR | Version minor [manually defined by user in .bat]
 APP_MICRO | Build number of app (auto-increments +1 per Qt build)
 APP_BUILD | Generated based on year project started and the number of days into the year.
+
+# Configs (build.bat)
+The batch file comes with settings at the top which you can adjust based on how you need the header file created.
+
+Setting | Description
+------------ | -------------
+inc_micro | Includes a VERSION MICRO macro in your header file for use
+inc_build | Includes a VERSION BUILD macro in your header file for use
