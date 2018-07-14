@@ -77,3 +77,17 @@ The way you version your software really depends on personal preference. This sc
   <dt>Template Ex:</dt>
   <dd>[MAJOR].[MINOR].[MICRO].[BUILD]</dd>
 </dl>
+
+<dl>
+  <dt>Major:</dt>
+  <dd>Major revision (new interfaces, major features introduced, conceptual change, etc.)</dd>
+  <dt>Minor:</dt>
+  <dd>Minor revision (updates that collectively include smaller updates such as simple feature enhancements compiled with bug fixes)
+  <dt>Micro:</dt>
+  <dd>Used in this script to represent the build integer (increased by +1 on each qmake performed)
+  <dt>Build:</dt>
+  <dd>Represented in this script as the date of the app being built. An example would be <b>1192</b> which would mean (Built year 1 of development on the 192nd day of the year)
+</dd>
+</dl>
+
+Since the format of versioning is highly debated by developers, you have control in the **build.bat** to determine what the MICRO and BUILD should represent. Should you wish to assign these numbers manually, you may do so.
