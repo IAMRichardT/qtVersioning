@@ -6,6 +6,10 @@ Create header files for C++ applications through qmake / batch. Currently the do
 - Windows OS
 - Text Editor [ [Sublime](https://www.sublimetext.com/) | [Visual Studio Code](https://code.visualstudio.com/) | [Atom](https://atom.io/) ]
 
+### Language(s) Assocated:
+- C++
+- Batch Scripting
+
 # Description
 Originally used in conjunction with Qt and called via the **application.pro** file. Creates the definitions for name, company, and automatic MAJOR, MINOR, MICRO, BUILD preprocessor macros.
 
