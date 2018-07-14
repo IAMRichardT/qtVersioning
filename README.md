@@ -1,14 +1,17 @@
 # rBuildHeader
 Create header files for C++ applications through qmake / batch. Currently the documentation includes detailed information related to Qt and will be updated with various other methods of implementation as well.
 
-This includes other operating systemas as well.
+### Requirements
+- [Qt Application](https://www.qt.io/developers/)
+- Windows OS
+- Text Editor [ [Sublime](https://www.sublimetext.com/) | [Visual Studio Code](https://code.visualstudio.com/) | [Atom](https://atom.io/) ]
 
 # Description
 Originally used in conjunction with Qt and called via the **application.pro** file. Creates the definitions for name, company, and automatic MAJOR, MINOR, MICRO, BUILD preprocessor macros.
 
 # Installation
 ## QT
-Open your Qt **application.pro** file and include the following so that everytime your application is built, it will run the batch file and create the proper **build.h** header
+Open your Qt **application.pro** file and include the following:
 
 ```c
 build_nr.commands = build.bat
