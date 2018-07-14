@@ -45,7 +45,14 @@ APP_BUILD | Generated based on year project started and the number of days into 
 # Configs (build.bat)
 The batch file comes with settings at the top which you can adjust based on how you need the header file created.
 
-Setting | Description
------------- | -------------
-inc_micro | Includes a VERSION MICRO macro in your header file for use
-inc_build | Includes a VERSION BUILD macro in your header file for use
+Setting | Default | Description
+------------ | ------------- | -------------
+cfg_pathbuild_fol | C:\Users\%USERNAME%\Documents\app | Path to C++ app being built
+cfg_pathbuild_run | build.bat | Batch file to be ran on qmake
+cfg_pathbuild_src | build.h | C++ app header file to build info in
+cfg_pathbuild_txt | build.txt | Text file to store VERSION BUILD val to (+1 increments)
+
+Setting | Default | Description
+------------ | ------------- | -------------
+cfg_inc_micro | y | Includes a VERSION MICRO macro in your header file for use
+cfg_inc_build | y | Includes a VERSION BUILD macro in your header file for use
