@@ -1,5 +1,7 @@
 # rBuildHeader
-Create header files for C++ applications through qmake / batch
+Create header files for C++ applications through qmake / batch. Currently the documentation includes detailed information related to Qt and will be updated with various other methods of implementation as well.
+
+This includes other operating systemas as well.
 
 # Description
 Originally used in conjunction with Qt and called via the **application.pro** file. Creates the definitions for name, company, and automatic MAJOR, MINOR, MICRO, BUILD preprocessor macros.
@@ -43,6 +45,7 @@ APP_BUILD | Generated based on year project started and the number of days into 
 # Configs (build.bat)
 The batch file comes with settings at the top which you can adjust based on how you need the header file created.
 
+### Macro Settings
 Setting | Default | Description
 ------------ | ------------- | -------------
 cfg_app_title | nil | Title of your application
@@ -53,12 +56,16 @@ cfg_app_vmajor | 1 | Major version of app
 cfg_app_vminor | 0 | Minor version of app
 cfg_app_vbyear | 2018 | Year app started (used in calculating VERSION BUILD)
 
+### Build Files and Paths
+
 Setting | Default | Description
 ------------ | ------------- | -------------
 cfg_pathbuild_fol | C:\Users\%USERNAME%\Documents\app | Path to C++ app being built
 cfg_pathbuild_run | build.bat | Batch file to be ran on qmake
 cfg_pathbuild_src | build.h | C++ app header file to build info in
 cfg_pathbuild_txt | build.txt | Text file to store VERSION BUILD val to (+1 increments)
+
+### Build Behaviors
 
 Setting | Default | Description
 ------------ | ------------- | -------------
