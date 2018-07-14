@@ -1,5 +1,5 @@
-# rBuildHeader
-Create header files for C++ applications through qmake / batch. Currently the documentation includes detailed information related to Qt and will be updated with various other methods of implementation as well.
+# qtVersioning
+Automate the process of app versioning via header files through qmake / batch as part of the development of your Qt application.
 
 ### Requirements
 - [Qt Application](https://www.qt.io/developers/)
