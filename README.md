@@ -91,7 +91,7 @@ The way you version your software really depends on personal preference. This sc
   <dt>Template Ex:</dt>
   <dd>[MAJOR].[MINOR].[MICRO].[BUILD]</dd>
   <dt>Sample:</dt>
-  <dd>1.3.218.1192</dd>
+  <dd>v1.3.218.1192</dd>
 </dl>
 
 <dl>
@@ -100,7 +100,7 @@ The way you version your software really depends on personal preference. This sc
   <dt>Minor:</dt>
   <dd>Minor revision (updates that collectively include smaller updates such as simple feature enhancements compiled with bug fixes)
   <dt>Micro:</dt>
-  <dd>Used in this script to represent the build integer (increased by +1 on each qmake performed)
+  <dd>Used in this script to represent the build integer (increased by +1 on each qmake performed) In the above sample, the micro <b>218</b> means that the app has been built 218 times since initial development started (adding features later to reset this number based on MAJOR/MINOR value changes)
   <dt>Build:</dt>
   <dd>Represented in this script as the date of the app being built. An example would be <b>1192</b> which would mean (Built year 1 of development on the 192nd day of the year)
 </dd>
