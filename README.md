@@ -24,8 +24,6 @@ Download the **build.bat** file from this repo and place it in the **project dir
 # Usage
 Every time you build your application in Qt, the **build.bat** script will execute, thus overwriting the existing **build.h** file you have in your project with new information. Each build ran will also auto-increment **#define APP_BUILD** by **+1**.
 
-**NOTE:** Remember that while using this, if you make any manual changes to your **build.h** file, those changes will be overwritten on the next build.
-
 # Customization
 All information to be included in your **header.h** file will come from the **build.bat** script. You may open that script in a text editor and adjust whatever parameters you wish. Once saved, go back to Qt and do another build so that the changes will take affect.
 
@@ -47,6 +45,16 @@ The batch file comes with settings at the top which you can adjust based on how 
 
 Setting | Default | Description
 ------------ | ------------- | -------------
+cfg_app_title | nil | Title of your application
+cfg_app_company | nil | Company which manages the app
+cfg_app_copyright | nil | Copyright information
+cfg_app_author | nil | Developer(s) involved with app
+cfg_app_vmajor | 1 | Major version of app
+cfg_app_vminor | 0 | Minor version of app
+cfg_app_vbyear | 2018 | Year app started (used in calculating VERSION BUILD)
+
+Setting | Default | Description
+------------ | ------------- | -------------
 cfg_pathbuild_fol | C:\Users\%USERNAME%\Documents\app | Path to C++ app being built
 cfg_pathbuild_run | build.bat | Batch file to be ran on qmake
 cfg_pathbuild_src | build.h | C++ app header file to build info in
@@ -56,3 +64,16 @@ Setting | Default | Description
 ------------ | ------------- | -------------
 cfg_inc_micro | y | Includes a VERSION MICRO macro in your header file for use
 cfg_inc_build | y | Includes a VERSION BUILD macro in your header file for use
+
+# Notes
+
+## Manual adjustments
+While using this, if you make any manual changes to your **build.h** file, those changes will be overwritten on the next build. If you wish to apply additional code to your build.h file, it's best to add the changes to your batch file and let it automate the process vs remembering to add the additional information after a build is complete. There will be a risk of forgetting to re-add the information after the build and possibly cause issues.
+
+## Versioning Format
+The way you version your software really depends on personal preference. This script gives you a 4-segment version number based on the following format:
+
+<dl>
+  <dt>Template Ex:</dt>
+  <dd><MAJOR>.<MINOR>.<MICRO>.<BUILD></dd>
+</dl>
