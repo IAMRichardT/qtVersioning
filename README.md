@@ -67,17 +67,24 @@ cfg_app_vbyear | 2018 | Year app started (used in calculating VERSION BUILD)
 
 Setting | Default | Description
 ------------ | ------------- | -------------
-cfg_pathbuild_fol | C:\Users\%USERNAME%\Documents\app | Path to C++ app being built
-cfg_pathbuild_run | build.bat | Batch file to be ran on qmake
-cfg_pathbuild_src | build.h | C++ app header file to build info in
-cfg_pathbuild_txt | build.txt | Text file to store VERSION BUILD val to (+1 increments)
+cfg_path_fol | C:\Users\%USERNAME%\Documents\app | Path to C++ app being built
+cfg_path_run | build.bat | Batch file to be ran on qmake
+cfg_path_src | build.h | C++ app header file to build info in
+cfg_path_txt | build.txt | Text file to store VERSION BUILD val to (+1 increments)
+cfg_path_log | build_debug.txt | Text file to store debugging logs
 
 ### Build Behaviors
 
 Setting | Default | Description
 ------------ | ------------- | -------------
-cfg_inc_micro | y | Includes a VERSION MICRO macro in your header file for use
-cfg_inc_build | y | Includes a VERSION BUILD macro in your header file for use
+cfg_debug_enabled | true | Enables debug which inserts build reports in <b>build_debug.txt</b>
+cfg_automate_micro | true | VERSION MICRO will auto increment +1 every build :: Disable to manually set
+cfg_inc_micro | true | Includes a VERSION MICRO macro in your header file for use
+cfg_inc_build | true | Includes a VERSION BUILD macro in your header file for use
+cfg_resetmicro | true | If cfg_automate_micro=true, micro will reset every major build change
+
+# Debug
+This script includes debugging which is enabled via **cfg_debug_enabled**. Each build will input a new log into the defined **cfg_path_log** file to help you keep track of build dates, times, and versioning. 
 
 # Notes
 
@@ -100,10 +107,12 @@ The way you version your software really depends on personal preference. This sc
   <dt>Minor:</dt>
   <dd>Minor revision (updates that collectively include smaller updates such as simple feature enhancements compiled with bug fixes)
   <dt>Micro:</dt>
-  <dd>Used in this script to represent the build integer (increased by +1 on each qmake performed) In the above sample, the micro <b>218</b> means that the app has been built 218 times since initial development started (adding features later to reset this number based on MAJOR/MINOR value changes)
+  <dd>Used in this script to represent the build integer (increased by +1 on each qmake performed) In the above sample, the micro <b>218</b> means that the app has been built 218 times since initial development started.<br /><br />You have the option to turn this OFF via <b>cfg_automate_micro</b> and use it as a PATCH integer instead.
   <dt>Build:</dt>
   <dd>Represented in this script as the date of the app being built. An example would be <b>1192</b> which would mean (Built year 1 of development on the 192nd day of the year)
 </dd>
 </dl>
+
+If you choose to turn off **cfg_automate_micro**, you will manually have to set the integer yourself. People tend to use the VERSION MICRO as a PATCH integer (raised each time a strict bug patch is released).
 
 Since the format of versioning is highly debated by developers, you have control in the **build.bat** to determine what the MICRO and BUILD should represent. Should you wish to assign these numbers manually, you may do so.
