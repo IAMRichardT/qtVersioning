@@ -119,3 +119,27 @@ If you choose to turn off **cfg_automate_micro**, you can manually set the integ
 People tend to use the VERSION MICRO as a PATCH integer (raised each time a strict bug patch is released).
 
 Since the format of versioning is highly debated by developers, you have control in the **build.bat** to determine what the MICRO and BUILD should represent. Should you wish to assign these numbers manually, you may do so.
+
+# Preview
+Once your app is built in Qt, your **build.h** header file should look like the following:
+
+```c++
+/** 
+*  @package     Your Application 
+*  @file        build.h 
+*  @author      Richard 
+*/ 
+ 
+#ifndef BUILD_H 
+#define BUILD_H 
+ 
+#define APP_TITLE "Your Application" 
+#define APP_COMPANY "Oort Digital" 
+#define APP_COPYRIGHT "Copyright (c) 2018 Oort Digital" 
+#define APP_MAJOR 1 
+#define APP_MINOR 1 
+#define APP_MICRO 46 
+#define APP_BUILD 0196 
+ 
+#endif // BUILD_H 
+```
