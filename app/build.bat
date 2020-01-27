@@ -10,15 +10,15 @@
 
 :: application configs
 set cfg_app_title="qtVersioning"
-set cfg_app_company="Oort Digital"
+set cfg_app_company="Company Name"
 set cfg_app_website="http://company-url.com"
-set cfg_app_copyright="Copyright (c) 2020 Your Company"
+set cfg_app_copyright="Copyright (c) 2020"
 set cfg_app_author="Richard"
 set cfg_app_license="GPL-3.0"
 set cfg_app_vmajor=1
 set cfg_app_vminor=1
 set cfg_app_vmicro=0
-set cfg_app_vbyear=2018
+set cfg_app_vbyear=2020
 
 set cfg_debug_enabled=true
 set cfg_inc_micro=true
