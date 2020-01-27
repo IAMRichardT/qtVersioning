@@ -1,7 +1,7 @@
 ::/
 ::  @product     qtVersioning
 ::  @file        build.bat
-::  @author      Richard [https://github.com/IAMRichardT/]
+::  @author      Richard [https://github.com/im-richard/]
 ::
 ::  Called on build of the application to create the build.h header file
 ::/
@@ -12,7 +12,7 @@
 set cfg_app_title="qtVersioning"
 set cfg_app_company="Oort Digital"
 set cfg_app_website="http://company-url.com"
-set cfg_app_copyright="Copyright (c) 2018 Oort Digital"
+set cfg_app_copyright="Copyright (c) 2020 Your Company"
 set cfg_app_author="Richard"
 set cfg_app_license="GPL-3.0"
 set cfg_app_vmajor=1
